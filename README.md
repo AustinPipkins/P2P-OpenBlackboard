@@ -39,6 +39,10 @@ This P2P network tries to limit the number of messages sent per broadcast/relay 
 ### 8 user network
 ![8 user network](READMEIMGS/8users.png)
 
+### Low connection dot
+![Low connection dot](READMEIMGS/hostGone.png)
+
+
 
 # Known Problems
 This project was completed using our campus's linux machines. Each of them had a unique IP address (not a member of a private network) 
