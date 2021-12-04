@@ -21,7 +21,9 @@ P2P networks are known to be very scaleable because of its capability to propiga
 2) It's size is always 2^n-1 (n >= 1). Empty cells of the array are symbolized by "X" <br><br>
 
 
-This P2P network tries to limit the number of messages sent per broadcast/relay to 2, but at times, a user may be responsibe for sending up to n/2 - 1 messages in worst case. To start a message broadcast, the sending user will send the message (in broadcast protocol format) (n+1)/4 users to the left and to the right. They will also send this number to them (the hopNum ). These users will then relay this message to hopNum/2 users to the left and to the right. Thsi will continue until a user recieves a message with a hopNum of 1. If a user attempts to send a message to an "X", then they will recusrivly relay that message from the point of view of that missing IP address. The pictures below may help illistrate this point:
+This P2P network tries to limit the number of messages sent per broadcast/relay to 2, but at times, a user may be responsibe for sending up to n/2 - 1 messages in worst case. To start a message broadcast, the sending user will send the message (in broadcast protocol format) (n+1)/4 users to the left and to the right. They will also send this number to them (the hopNum ). These users will then relay this message to hopNum/2 users to the left and to the right. Thsi will continue until a user recieves a message with a hopNum of 1. If a user attempts to send a message to an "X", then they will recusrivly relay that message from the point of view of that missing IP address. The picture below may help illistrate this point:
+
+![Relays](READMEIMGS/conn.png)
 
 # Pictures
 ### Connection 
